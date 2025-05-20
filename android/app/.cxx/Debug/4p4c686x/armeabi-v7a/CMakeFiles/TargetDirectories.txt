@@ -1,0 +1,2 @@
+D:/Projects/gramthan/android/app/.cxx/Debug/4p4c686x/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Projects/gramthan/android/app/.cxx/Debug/4p4c686x/armeabi-v7a/CMakeFiles/rebuild_cache.dir
