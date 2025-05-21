@@ -1,5 +1,6 @@
 import 'package:avis/controllers/first_step_form_controller.dart';
 import 'package:avis/models/farmer.dart';
+import 'package:avis/pages/forms/partB.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
@@ -479,50 +480,49 @@ class Parta extends StatelessWidget {
                       )
                     ],
                   ),
-                  ElevatedButton(
-                    onPressed:
-                        controller.isLoading.value ? null : controller.submit,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue[800],
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+
+                   ElevatedButton(
+                      onPressed: () {
+                       Get.to(Partb());
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[800],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+                        elevation: 4,
                       ),
-                      padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 10),
-                      elevation: 4,
-                    ),
-                    child: controller.isLoading.value
-                        ? SpinKitWave(
-                            color: Colors.blue[800],
-                            size: 26.0,
-                          )
-                        : Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Expanded(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'next_step'.tr,
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'next_step'.tr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                              ),
-                              Icon(
-                                Icons.arrow_forward,
-                                color: Colors.white,
-                                size: 21,
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                  ),
+                          Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                            size: 21,
+                          ),
+                        ],
+                      ),
+                    ),
+
+                   
                 ],
               ),
             ),

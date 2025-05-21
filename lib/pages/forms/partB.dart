@@ -1,5 +1,7 @@
 import 'package:avis/controllers/second_step_form_controller.dart';
 import 'package:avis/pages/forms/form_builder.dart';
+import 'package:avis/pages/forms/partB1.dart';
+import 'package:avis/pages/forms/test.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +19,7 @@ class _PartbState extends State<Partb> {
       appBar: AppBar(
         // title: Text('vaccine_detail'.tr, style: TextStyle(color: Colors.white)),
         title: Text('वैदेशिक रोजगारमा रहेका व्यक्तिहरुसंग सम्बन्धि विवरण',
-            style: TextStyle(color: Colors.white, fontSize: 17)),
+            style: TextStyle(color: Colors.white, fontSize: 15)),
         backgroundColor: Colors.blue[800],
         iconTheme: IconThemeData(color: Colors.white),
         centerTitle: true,
@@ -90,7 +92,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "${'farmer_gender'.tr} :",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -147,7 +150,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "उमेर",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -181,7 +185,7 @@ class _PartbState extends State<Partb> {
                         ),
                       ],
                     ),
-                  
+                   
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -194,7 +198,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "जातजाति",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -251,7 +256,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "वैवाहिक अवस्था",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -309,8 +315,7 @@ class _PartbState extends State<Partb> {
                         ),
                       ],
                     ),
-                  
-                     Row(
+                    Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
@@ -322,7 +327,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "कुन देशमा कार्यरत हुनुहुन्छ ?",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -332,25 +338,25 @@ class _PartbState extends State<Partb> {
                               ),
                               SizedBox(height: 3),
                               TextFormField(
-                              // controller: controller.nameController,
-                              decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Colors.blue[50],
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(12),
-                                  borderSide: BorderSide.none,
+                                // controller: controller.nameController,
+                                decoration: InputDecoration(
+                                  filled: true,
+                                  fillColor: Colors.blue[50],
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                    borderSide: BorderSide.none,
+                                  ),
+                                  hintText: 'देशको नाम',
+                                  contentPadding: EdgeInsets.symmetric(
+                                      vertical: 13, horizontal: 12),
                                 ),
-                                hintText: 'देशको नाम',
-                                contentPadding: EdgeInsets.symmetric(
-                                    vertical: 13, horizontal: 12),
-                              ),
-                              validator: (value) {
-                                if (value == null || value.isEmpty) {
-                                  return 'required'.tr;
-                                }
-                                return null;
-                              },
-                            )
+                                validator: (value) {
+                                  if (value == null || value.isEmpty) {
+                                    return 'required'.tr;
+                                  }
+                                  return null;
+                                },
+                              )
                             ],
                           ),
                         ),
@@ -364,7 +370,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "गएको पटक",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -398,7 +405,7 @@ class _PartbState extends State<Partb> {
                         ),
                       ],
                     ),
-                  Column(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       spacing: 10.0,
                       children: [
@@ -445,8 +452,7 @@ class _PartbState extends State<Partb> {
                         ),
                       ],
                     ),
-                  
-                   Row(
+                    Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
@@ -458,7 +464,8 @@ class _PartbState extends State<Partb> {
                                 children: [
                                   Text(
                                     "हफ्ता वा महिनामा कति पटक फोन सम्पर्क गर्नुहुन्छ ?",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "*",
@@ -510,11 +517,50 @@ class _PartbState extends State<Partb> {
                                   return null;
                                 },
                               ),
-                              
                             ],
                           ),
                         ),
                       ],
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Get.to(Partb1());
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[800],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+                        elevation: 4,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'अघि बढ्नुहोस',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                            size: 21,
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

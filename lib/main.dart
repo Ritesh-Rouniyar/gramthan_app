@@ -3,6 +3,7 @@ import 'package:avis/Pages/home_page.dart';
 import 'package:avis/pages/forms/partB.dart';
 import 'package:avis/pages/forms/select.dart';
 import 'package:avis/pages/forms/step_first.dart';
+import 'package:avis/pages/forms/test.dart';
 import 'package:avis/services/user_service.dart';
 import 'package:avis/utils/locale_string.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +31,9 @@ class MyApp extends StatelessWidget {
       translations: LocalString(),
       locale: Locale("ne","NP"),
       debugShowCheckedModeBanner:false,
-      // home: HomePage(),
-      // home: StepSecond(),
-      home: Partb(),
+      home: HomePage(),
+      // home: Partb(),
+      // home: Test(),
     );
   }
 }
