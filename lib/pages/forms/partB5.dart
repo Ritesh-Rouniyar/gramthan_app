@@ -1,5 +1,6 @@
 import 'package:avis/controllers/second_step_form_controller.dart';
 import 'package:avis/pages/forms/form_builder.dart';
+import 'package:avis/pages/forms/location_form.dart';
 import 'package:avis/pages/forms/partB1.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,7 +28,7 @@ class _PartbState extends State<Partb5> {
     return Scaffold(
       appBar: AppBar(
         // title: Text('vaccine_detail'.tr, style: TextStyle(color: Colors.white)),
-        title: Text('वैदेशिक विवरण',
+        title: Text('वैदेशिक रोजगारमा रहेका व्यक्तिहरुसंग सम्बन्धि विवरण',
             style: TextStyle(color: Colors.white, fontSize: 15)),
         backgroundColor: Colors.blue[800],
         iconTheme: IconThemeData(color: Colors.white),
@@ -236,6 +237,7 @@ class _PartbState extends State<Partb5> {
                                     ),
                                   ],
                                 ),
+                             
                               ],
                             ),
                             Column(
@@ -576,7 +578,7 @@ class _PartbState extends State<Partb5> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        // Get.to(Partb1());
+                        Get.to(LocationForm());
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue[800],

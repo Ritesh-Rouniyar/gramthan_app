@@ -5,6 +5,8 @@ import 'package:avis/Pages/notification.dart';
 import 'package:avis/controllers/app_controller.dart';
 import 'package:avis/controllers/home_controller.dart';
 import 'package:avis/pages/forms/partA.dart';
+import 'package:avis/pages/forms/partB.dart';
+import 'package:avis/pages/forms/partC1.dart';
 import 'package:avis/pages/forms/step_first.dart';
 import 'package:avis/repositories/local/farmer_record_repository.dart';
 import 'package:avis/widgets/nav_drawer.dart';
@@ -141,7 +143,7 @@ class _SelectPageState extends State<SelectPage> {
                             children: [
                               ElevatedButton(
                                 onPressed: () {
-                                  Get.to(Parta());
+                                  Get.to(Partb());
                                 },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.blue[800],
@@ -180,7 +182,7 @@ class _SelectPageState extends State<SelectPage> {
                               
                               ElevatedButton(
                                 onPressed: () {
-                                  Get.to(Parta());
+                                  Get.to(Partc1());
                                 },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.blue[800],

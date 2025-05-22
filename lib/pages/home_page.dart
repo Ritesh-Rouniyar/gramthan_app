@@ -4,6 +4,7 @@ import 'package:avis/Pages/drafts.dart';
 import 'package:avis/Pages/notification.dart';
 import 'package:avis/controllers/app_controller.dart';
 import 'package:avis/controllers/home_controller.dart';
+import 'package:avis/pages/forms/partA.dart';
 import 'package:avis/pages/forms/select.dart';
 import 'package:avis/pages/forms/step_first.dart';
 import 'package:avis/repositories/local/farmer_record_repository.dart';
@@ -128,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               ElevatedButton(
                                 onPressed: () {
-                                  Get.to(SelectPage());
+                                  Get.to(Parta());
                                 },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.blue[800],

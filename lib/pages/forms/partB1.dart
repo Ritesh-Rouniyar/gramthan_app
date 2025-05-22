@@ -21,8 +21,7 @@ class _Partb1State extends State<Partb1> {
   bool _ismoneyvoucherselected = false;
   bool _isshramselected = false;
   bool _isuseridselected = false;
-  // bool _isdocumentselected = false;
-  // bool _isdocumentselected = false;
+
 
   @override
   Widget build(BuildContext context) {

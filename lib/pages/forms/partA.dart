@@ -1,6 +1,7 @@
 import 'package:avis/controllers/first_step_form_controller.dart';
 import 'package:avis/models/farmer.dart';
 import 'package:avis/pages/forms/partB.dart';
+import 'package:avis/pages/forms/select.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
@@ -171,7 +172,7 @@ class Parta extends StatelessWidget {
                                     12), // Rounded corners
                                 borderSide: BorderSide.none,
                               ),
-                              hintText: '${'farmer_no'.tr}',
+                              hintText: 'farmer_no'.tr,
                               contentPadding: EdgeInsets.symmetric(
                                   vertical: 16, horizontal: 12),
                             ),
@@ -482,7 +483,7 @@ class Parta extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Get.to(Partb());
+                      Get.to(SelectPage());
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue[800],
