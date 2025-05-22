@@ -1,6 +1,7 @@
 import 'package:avis/Pages/Auth/login.dart';
 import 'package:avis/Pages/home_page.dart';
 import 'package:avis/pages/forms/partB.dart';
+import 'package:avis/pages/forms/partB4.dart';
 import 'package:avis/pages/forms/select.dart';
 import 'package:avis/pages/forms/step_first.dart';
 import 'package:avis/pages/forms/test.dart';
@@ -32,8 +33,6 @@ class MyApp extends StatelessWidget {
       locale: Locale("ne","NP"),
       debugShowCheckedModeBanner:false,
       home: HomePage(),
-      // home: Partb(),
-      // home: Test(),
     );
   }
 }

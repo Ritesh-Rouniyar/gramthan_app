@@ -480,49 +480,46 @@ class Parta extends StatelessWidget {
                       )
                     ],
                   ),
-
-                   ElevatedButton(
-                      onPressed: () {
-                       Get.to(Partb());
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue[800],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        padding:
-                            EdgeInsets.symmetric(vertical: 12, horizontal: 10),
-                        elevation: 4,
+                  ElevatedButton(
+                    onPressed: () {
+                      Get.to(Partb());
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[800],
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Expanded(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'next_step'.tr,
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Icon(
-                            Icons.arrow_forward,
-                            color: Colors.white,
-                            size: 21,
-                          ),
-                        ],
-                      ),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+                      elevation: 4,
                     ),
-
-                   
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'next_step'.tr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                          size: 21,
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
